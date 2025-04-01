@@ -1,3 +1,10 @@
+if game.Players.LocalPlayer.Backpack:FindFirstChild("BlockTools") then
+    for _,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants()) do
+        if v.Name == "BlockTools" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
 game:GetService("ReplicatedStorage").NrANkuyIc5KfeR4RdAxwCdZBch1yXu:FireServer("lX4sh0KQ80yq8SzLlIOUzAwR4T4Bfj", "BlockTools", CFrame.new(22.3, 34, -6.1))
 game:GetService("ReplicatedStorage").NrANkuyIc5KfeR4RdAxwCdZBch1yXu:FireServer("lX4sh0KQ80yq8SzLlIOUzAwR4T4Bfj", "BlockTools", CFrame.new(22.3, 32, -6.1))
 game:GetService("ReplicatedStorage").NrANkuyIc5KfeR4RdAxwCdZBch1yXu:FireServer("lX4sh0KQ80yq8SzLlIOUzAwR4T4Bfj", "BlockTools", CFrame.new(22.3, 34, -2.1))
@@ -32,3 +39,10 @@ game:GetService("ReplicatedStorage").NrANkuyIc5KfeR4RdAxwCdZBch1yXu:FireServer("
 game:GetService("ReplicatedStorage").NrANkuyIc5KfeR4RdAxwCdZBch1yXu:FireServer("lX4sh0KQ80yq8SzLlIOUzAwR4T4Bfj", "BlockTools", CFrame.new(22.3, 16, 5.9))
 game:GetService("ReplicatedStorage").NrANkuyIc5KfeR4RdAxwCdZBch1yXu:FireServer("lX4sh0KQ80yq8SzLlIOUzAwR4T4Bfj", "BlockTools", CFrame.new(22.3, 18, 9.9))
 game:GetService("ReplicatedStorage").NrANkuyIc5KfeR4RdAxwCdZBch1yXu:FireServer("lX4sh0KQ80yq8SzLlIOUzAwR4T4Bfj", "BlockTools", CFrame.new(22.3, 16, 9.9))
+if game.Players.LocalPlayer.Character:FindFirstChild("BlockTools") then
+    for _,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+        if v.Name == "BlockTools" then
+            v.Parent = game.Players.LocalPlayer.Backpack
+        end
+    end
+end
